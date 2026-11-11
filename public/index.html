@@ -276,7 +276,7 @@ async function api(path, opts={}){
 
 /* ---------- map ---------- */
 const map = L.map('map', { zoomControl:false }).setView([21.0285, 105.8542], 13.4);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_56ze_1_6c8b9d934c75501dc76b0b1e', {
   attribution:'&copy; OSM &copy; CARTO', maxZoom:19,
 }).addTo(map);
 
